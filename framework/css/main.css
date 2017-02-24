@@ -9,9 +9,40 @@
 	box-sizing: border-box;
 }
 
-.grid {
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: lighter;
+	margin: 0;
+}
+
+
+p.description {
+	font-size: 1.3em;
+	margin-top: 0;
+}
+
+h1, p {
+	color: #bcbbbb;
+}
+
+h3 {
+	text-align: center;
+}
+.container {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 1000px;
 	width: 100%;
 }
 
@@ -86,3 +117,5 @@
 .bottom {
 	color: #bcbbbb;
 }
+
+
