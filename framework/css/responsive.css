@@ -1,0 +1,7 @@
+/*media query*/
+
+@media screen and (max-width: 960px) {
+    .bottom {
+        width: 100%；
+    }
+}
