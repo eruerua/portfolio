@@ -12,9 +12,9 @@ gulp.task('scripts',function(){
 });
 
 gulp.task('minify-css', function() {
-    gulp.src('styles/*.css')
+    gulp.src('css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('imagemin', function(){
@@ -25,7 +25,7 @@ gulp.task('imagemin', function(){
 
 gulp.task('watch',function(){
     gulp.watch('js/*.js',['scripts']);
-    gulp.watch('styles/*.css',['minify-css']);
+    gulp.watch('css/*.css',['minify-css']);
     gulp.watch('src/images/*',['imagemin']);
 });
 
