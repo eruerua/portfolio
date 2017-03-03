@@ -3,9 +3,6 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-* {
     font-family: 'Lato', sans-serif;
 }
 
@@ -23,17 +20,20 @@ h1 {
     margin: 0;
 }
 
-
 h2 {
     color: #bcbbbb;
-    font-size: 1em;
-    margin: 0;
+    font-size: 2em;
+    margin: 0 0 10px 0;
 }
 
 h3 {
     font-size: 2em;
     text-align: center;
     margin: 10px 0 0 0;
+}
+
+figure {
+    margin: 0;
 }
 
 .container {
@@ -73,12 +73,6 @@ h3 {
     height: 350px;
     background-image: url("../images/center-pic.jpg");
     background-size: cover;
-}
-
-.bottom-title {
-    color: #bcbbbb;
-    font-size: 2em;
-    margin-bottom: 10px;
 }
 
 .bottom {
@@ -173,18 +167,32 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+    h2 {
+        font-size: 1.5em;
+        color: blue;
+        text-align: center;
+        margin: 10px 0 0 10px;
+    }
+
+    h3 {
+        font-size: 1em;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
     .bottom {
         width: 100%;
     }
 
     .bottom img {
-        margin: 0 calc((100% - 300px)/2);
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .logo {
-        width: 50%;
-    }
-    .name {
-        width: 50%;
+
+    .bottom:last-of-type img {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
