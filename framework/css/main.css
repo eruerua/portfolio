@@ -158,9 +158,11 @@ figure {
     .bottom:last-of-type img {
         margin: 0 calc((100% - 300px)/2);
     }
+
     .logo {
         width: 50%;
     }
+
     .name {
         width: 50%;
     }
